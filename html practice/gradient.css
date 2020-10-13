@@ -1,0 +1,9 @@
+#box1 {
+width: 1900px;
+height: 300px;
+float: left;
+background: blue;
+<!--background: linear-gradient(45deg, blue, yellow);-->
+background: linear-gradient(rgba(255,255,0,0.3),rgba(0,0,255,1));
+
+}
