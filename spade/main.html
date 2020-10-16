@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spade Event Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-lg-0">
+      <a class="navbar-brand" href="#">
+        <!-- Add logo with size of 90*80 -->
+        <img src="brand-logo-white.png" width="90" height="80" alt="" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SKP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Internship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Campus Ambassador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="w-100" id="carousel-text">
+        <div class="container-fluid text-left bg-dark-blue px-md-5">
+          <h1 class="font-heading">SPADE</h1>
+          <h3 style="color: white">Event Management Services Pvt. Ltd.</h3>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="1"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="2"
+          class="active"
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="3"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="4"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="5"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="6"
+          class=""
+        ></li>
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="7"
+          class=""
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/1.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/2.jpg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/3.jpg"
+            alt="Third slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/4.jpg"
+            alt="Fourth slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/5.jpg"
+            alt="Fifth slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/6.jpg"
+            alt="Sixth slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/7.jpg"
+            alt="Seventh slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://raw.githubusercontent.com/spadeems/web/master/img/slider/8.jpg"
+            alt="Eight slide"
+          />
+        </div>
+      </div>
+    </div>
+    <section class="bg-white py-5" id="counter">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-2 mb-4 text-center">
+            <h4 class="h1 font-weight-normal mb-3">
+              <span class="d-inline-block count1">W</span>
+              <b>+</b>
+            </h4>
+            <p class="font-weight-bold text-heading h5">Successfull Events</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-4 text-center offset-lg-1">
+            <h4 class="h1 font-weight-normal mb-3">
+              <span class="d-inline-block count2">X</span>
+              <b>+</b>
+            </h4>
+            <p class="font-weight-bold text-heading h5">Years of Experience</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-4 text-center offset-lg-1">
+            <h4 class="h1 font-weight-normal mb-3">
+              <span class="d-inline-block count3">Y</span>
+              <b>+</b>
+            </h4>
+            <p class="font-weight-bold text-heading h5">Clients</p>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-4 text-center offset-lg-1">
+            <h4 class="h1 font-weight-normal mb-3">
+              <span class="d-inline-block count4">Z</span>
+              <b>+</b>
+            </h4>
+            <p class="font-weight-bold text-heading h5">Team Members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-dark-blue py-5">
+      <div class="container">
+      <div class="heading">
+      <h1 class="white-text text-center"><b>WELCOME TO SPADE FAMILY</b></h1>
+      </div>
+      <div class="container mt-5">
+      <div class="row">
+      <div class="col-lg-6 col-md-12 text-justify">
+      <p class="h6">
+      Spade EMS is working on the institutional event management by involving the students of the institutions to dig out the hidden talent among them through participating in activities. The company aspires to be a global benchmark for value creation and nurturing talents of youths. The start-up has been in Top 75 Business Plans in Cohort #4 of Incubation Program at AIC NMIMS Incubation Centre, Niti Ayog. The start-up is recognised by the Department of Industrial Policy and Promotion, Ministry of Commerce and Industry. They have collaborations with many tech giants and communities like Amazon Alexa, Google CrowdSource, Girlscript Foundation, CADD Centre, Quest Global Technologies to meet the requirements of institutions and students.<br>
+      Headquarters : Jalandhar, Punjab, India<br>
+      Business Model : B2B2C<br>
+      Founding Date : Oct 2019</p>
+      <p class="h6">
+      The founders are Abhishek Kumar Jha and Pooja (Co-Founder).<br>
+      The SPADE team members are self-motivated youngsters who strive to serve their best in event management services.
+      </p>
+      </div>
+      <div class="text-center">
+        <button class="w3-button w3-white w3-border w3-border-white w3-round-large">More</button>
+      </div>
+      </div>
+      </section>
+      <div class="services">
+        <h1>Our Services</h1>
+        <div class="cen">
+          <div class="service">
+            <i class="fas fa-anchor"></i>
+            <h2>Web Development</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fab fa-android"></i>
+            <h2>App Development</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fab fa-angellist"></i>
+            <h2>Digital Marketing</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fas fa-apple-alt"></i>
+            <h2>Graphics Designing</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fas fa-archway"></i>
+            <h2>Video Editing</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+  
+          <div class="service">
+            <i class="far fa-angry"></i>
+            <h2>Event Management</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="service">
+            <i class="far fa-angry"></i>
+            <h2>Sales</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="service">
+            <i class="far fa-angry"></i>
+            <h2>Sponsorship</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <section class="bg-dark-blue py-5" id="partners">
+        <div class="heading">
+        <h1 class="white-text text-center"><b>OUR PARTNERS</b></h1>
+        </div>
+        <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item">
+        <div class="row" style="text-align: center;">
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src=" https://raw.githubusercontent.com/spadeems/web/master/img/partners/cognizance.png" height="200px" alt="" data-pagespeed-url-hash="1559272031" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <h4 style="color: #fff;">IIT ROORKEE</h4>
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/redcarpet.png" class="img-fluid" alt="" data-pagespeed-url-hash="2522761826" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/zebronics.png" class="img-fluid" alt="" data-pagespeed-url-hash="3209609697" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/quest.png" class="img-fluid" alt="" data-pagespeed-url-hash="1030092340" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row" style="text-align: center;">
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/nivia.png" class="img-fluid" alt="" data-pagespeed-url-hash="949617589" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/coca-cola.png" class="img-fluid" alt="" data-pagespeed-url-hash="3120393874" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/bookmyshow.png" class="img-fluid" alt="" data-pagespeed-url-hash="1878427546" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/kfc.png" class="img-fluid" alt="" data-pagespeed-url-hash="405998978" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item active">
+        <div class="row" style="text-align: center;">
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/telcocrats.png" class="img-fluid" alt="" data-pagespeed-url-hash="4243790910" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/techienest.png" class="img-fluid" alt="" data-pagespeed-url-hash="2959369278" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/girlscript.png" class="img-fluid" alt="" style="height:200px" data-pagespeed-url-hash="1742468727" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <br>
+        <h2 style="color: #fff;"><b>GirlScript<b></b></b></h2><b><b>
+        </b></b></div><b><b>
+        <div class="col-lg-3 offset-lg-0 p-lg-4 col-8 offset-2 p-0">
+        <img src="https://raw.githubusercontent.com/spadeems/web/master/img/partners/alexa.png" height="200px" width="200px" alt="" data-pagespeed-url-hash="365874429" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        <br>
+        <h3 style="color: #fff;"><b>AmazonAlexa<b></b></b></h3><b><b>
+        </b></b></div><b><b>
+        </b></b></b></b></div><b><b><b>
+        </b></b></b></div><b><b><b>
+        </b></b></b></div><b><b><b>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" hidden="">
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" hidden="">
+        </a>
+        </b></b></b></div><b><b><b>
+        
+        </b></b></b></div><b><b><b>
+        </b></b></b></section>
+        <div class="testimonial">
+  <h1 class="text-center">Testimonial</h1>
+   
+     <div class="item">
+       <div class="img">
+         <img src="red.png" alt="">
+       </div>
+       <div class="name">Mr Red</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="stars">
+   		   <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="img">
+         <img src="blue.png" alt="">
+
+       </div>
+       <div class="name">Mr Blue</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="stars">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gray.png" alt="">
+           <img src="star_gray.png" alt="">
+           <img src="star_gray.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="img">
+         <img src="green.png" alt="">
+       </div>
+       <div class="name">Mr Green</div>
+       <div class="content">
+         <h1><i class="fas fa-quote-left"></i></h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat sint distinctio corporis debitis neque aliquid quae maiores molestiae qui. Repudiandae itaque beatae illum labore.</p>
+         <div class="stars">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gold.png" alt="">
+           <img src="star_gray.png" alt="">
+           <img src="star_gray.png" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="clear-fix"></div>
+  </div>
+</div>	
+<div>
+  <h1 class="text-center">Our Social Media Handles</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div>
+  <div class="bg-dark-blue end-content">
+    <img src="brand-logo-white.png" width="150" height="80" alt="">
+    <br> 
+    <br> 
+    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+   <h4 style="color: white;">Useful Links</h4> 
+   <ul style="list-style: none;">
+     <li><a href="">Services</a></li>
+     <li><a href="">About</a></li>
+     <li><a href="">Contact</a></li>
+   </ul>
+   </div>
+</div>
+</body>
+</html>
