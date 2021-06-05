@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  /*Helps in obtaining the styles on the
+   whole screen. Without this styles will get duplicate 
+   in accourdance the size of div*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#a1c4fd, #c2e9fb);
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  /*half from the top*/
+  left: 50%;
+  /*half from the left*/
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  /*makes perfect center*/
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  /*padding + width = total size*/
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  /* offset-x | offset-y | blur-radius | color */
+  border-radius: 10px;
+}
+.login-box h2 {
+  margin: 0 0 30px; /* top | horizontal | bottom */
+  padding: 0;
+  text-align: center;
+  color: seashell;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: seashell;
+  margin-bottom: 30px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid seashell;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: seashell;
+  padding: 10px 0;
+  transition: -5s;
+  pointer-events: none;
+}
+.login-box .submit-btn {
+  color: aqua;
+  text-decoration: none;
+}
