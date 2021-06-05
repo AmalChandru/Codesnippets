@@ -1,0 +1,19 @@
+aside {
+  color: white;
+  padding-left: 20px;
+  width: 250px;
+  height: 100vh;
+  border-top-right-radius: 80px;
+  background-image: linear-gradient(30deg, #0048bd, #44a7fd);
+}
+aside a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px;
+  padding-left: 30px;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: none;
+}
+aside a:hover {
+}
